@@ -9,11 +9,11 @@ openAnswer.forEach((open, i) => {
 
         answer.forEach((content, index) => {
 
-            open.addEventListener('click', (e) => {
+            open.addEventListener('click', () => {
 
             while (i===j){
                 while(j===index){
-                    if(open.style.display != 'none'){
+                    if(open.style.display !== 'none'){
                     content.style.display = "block"
                     close.style.display = "block";
                     open.style.display = "none";
@@ -26,11 +26,11 @@ openAnswer.forEach((open, i) => {
                 }
             })
 
-            close.addEventListener('click', (a) => {
+            close.addEventListener('click', () => {
                     
                 while (i===j){
                 while(j===index){
-                    if(close.style.display != 'none'){
+                    if(close.style.display !== 'none'){
                     content.style.display = "none"
                     open.style.display = "block";
                     close.style.display = "none";
