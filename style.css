@@ -14,6 +14,7 @@
     --purple-100: hsl(275, 100%, 97%);
     --purple-600: hsl(292, 16%, 49%);
     --purple-950: hsl(292, 42%, 14%);
+    --purple-hover: hsl(292, 88%, 46%);
 
     --size-1: 1rem;
     --weight-400: 400;
@@ -81,6 +82,9 @@ header{
     font-size: calc(0.799*var(--size-1));
     color: var(--purple-950);
     margin-block-end: calc(1*var(--size-1));
+}
+.question:hover {
+    color: var(--purple-hover);
 }
 .minus{
     display: none;
