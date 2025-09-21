@@ -79,7 +79,8 @@ header{
 .question{
     display: flex;
     justify-content: space-between;
-    font-size: calc(0.799*var(--size-1));
+    font-size: var(--size-1);
+    font-weight: 600;
     color: var(--purple-950);
     margin-block-end: calc(1*var(--size-1));
 }
