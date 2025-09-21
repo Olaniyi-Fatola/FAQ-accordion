@@ -104,7 +104,7 @@ dd{
     bottom: 0;
     left:0;
     right: 0;
-    font-size: 11px; 
+    font-size: calc(0.8*var(--size-1)); 
     text-align: center; 
     color: var(--purple-950);
 }
