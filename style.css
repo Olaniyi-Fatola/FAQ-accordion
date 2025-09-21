@@ -30,6 +30,7 @@ body{
     background-color: var(--purple-100);
     min-height: 100dvh;
     color: var(--purple-600);
+    gap: 20rem;
 }
 
 .desktop_bg{
@@ -74,6 +75,12 @@ header{
 .star{
     width: 1.7rem;
     height: auto;
+
+    
+    transition: transform 1s ease-in-out;
+}
+.star.active{
+    transform: rotate(360deg);
 }
 
 .question{
@@ -95,8 +102,6 @@ dd{
     display: none;
     line-height: calc(1.4*var(--size-1));
     margin-block-end: calc(3*var(--size-1));
-
-    transform: translateY(0);
 }
 
 .attribution {

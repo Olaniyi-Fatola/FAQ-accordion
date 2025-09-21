@@ -2,6 +2,11 @@ const openAnswer = document.querySelectorAll('.plus');
 const closeAnswer = document.querySelectorAll('.minus');
 const answer = document.querySelectorAll('dd');
 
+    document.addEventListener('DOMContentLoaded', () => {
+        const star = document.getElementById('star');
+
+        star.classList.toggle('active');
+    });
 
 openAnswer.forEach((open, i) => {
 
@@ -13,6 +18,7 @@ openAnswer.forEach((open, i) => {
 
             while (i===j){
                 while(j===index){
+
                     if(open.style.display !== 'none'){
                     content.style.display = "block"
                     close.style.display = "block";
@@ -30,6 +36,7 @@ openAnswer.forEach((open, i) => {
                     
                 while (i===j){
                 while(j===index){
+
                     if(close.style.display !== 'none'){
                     content.style.display = "none"
                     open.style.display = "block";
