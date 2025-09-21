@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('fonts/WorkSans-VariableFont_wght.ttf');
+}
+
+:root{
+    --white: hsl(0, 100%, 100%);
+    --purple-100: hsl(275, 100%, 97%);
+    --purple-600: hsl(292, 16%, 49%);
+    --purple-950: hsl(292, 42%, 14%);
+
+    --size-1: 1rem;
+    --weight-400: 400;
+    --weight-600: 600;
+    --weight-700: 700;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'WorkSans', sans-serif;
+    font-size: var(--size-1);
+    background-color: var(--purple-100);
+    min-height: 100dvh;
+    color: var(--purple-600);
+}
+
+.desktop_bg{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    @media (min-width:39rem) {
+        display: block;
+
+    }
+}
+.mobile_bg{
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    @media (min-width:39rem) {
+        display: none;
+    }
+}
+
+.container{
+    position: absolute;
+    width: clamp(23rem, 17.718rem + 22.535vw, 38rem);
+    height: fit-content;
+    margin-block-start: calc(10*var(--size-1));
+    margin-block-end: calc(5*var(--size-1));
+    background-color: var(--white);
+    place-self: center;
+    padding: calc(2*var(--size-1));
+    border-radius: calc(0.5*var(--size-1));
+    box-shadow: 0em 0.6em 5em 0.3em rgba(70%, 50%, 60%, 0.3) ;
+}
+header{
+    display: flex;
+    gap: calc(1.5*var(--size-1));
+    color: var(--purple-950);
+    margin-block-end: calc(1.5*var(--size-1));
+}
+.star{
+    width: 1.7rem;
+    height: auto;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    font-size: calc(0.799*var(--size-1));
+    color: var(--purple-950);
+    margin-block-end: calc(1*var(--size-1));
+}
+.minus{
+    display: none;
+}
+
+dd{
+    display: none;
+    line-height: calc(1.4*var(--size-1));
+    margin-block-end: calc(3*var(--size-1));
+
+    transform: translateY(0);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right: 0;
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--purple-950);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
